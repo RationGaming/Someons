@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f3e5f5;
+    color: #6a1b9a;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background: #9c27b0;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.essay, .special-message {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.gallery-section, .music-section, .message-section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #7b1fa2;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.photo {
+    width: 340px; /* Makes all images fill the grid cell */
+    height: 190px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the images maintain aspect ratio and cover the space */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 3px solid #7b1fa2;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(123, 31, 162, 0.8);
+}
+
+
+
+audio {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 10px;
+    background: #9c27b0;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.photo-message {
+    background: rgba(156, 39, 176, 0.9);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(123, 31, 162, 0.8);
+}
+
+.message-section p {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #6a1b9a;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slide {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.fade {
+    animation: fadeEffect 3s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+
+.letters-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.letters-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    transition: 0.3s;
+}
+
+.love { background: #e63946; }
+.health { background: #2a9d8f; }
+.career { background: #f4a261; }
+.you { background: #457b9d; }
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+.letters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.letter {
+    display: block;
+    width: 80%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-size: 18px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
